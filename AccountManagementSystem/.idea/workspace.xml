@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b19256f4-e7d7-47df-b409-acbed656e03d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/AccountManagementSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/src/main/java/com/AccountManagement/AccountManagementSystem/AccountManagementSystemApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/AccountManagementSystem/AccountManagementSystem/src/test/java/com/AccountManagement/AccountManagementSystem/AccountManagementSystemApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="b19256f4-e7d7-47df-b409-acbed656e03d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "utkrist00-shahi"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/utkrist00-shahi/SpringBootAccoutManagementFullStack.git",
@@ -113,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749603887836</updated>
-      <workItem from="1749603890984" duration="2455000" />
+      <workItem from="1749603890984" duration="3043000" />
     </task>
     <servers />
   </component>
