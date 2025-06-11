@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -14,12 +15,12 @@ import java.util.List;
 public class AccountService {
     private final AccountRepository accountRepository;
 
-    public Account AddAccount(@RequestBody Account account) {
+    public Account AddAccount( Account account) {
         return accountRepository.save(account);
     }
 
 
     public List<Account> findAll() {
-        return accountRepository.findAll();
+        return new ArrayList<>(accountRepository.findAll());
     }
 }
