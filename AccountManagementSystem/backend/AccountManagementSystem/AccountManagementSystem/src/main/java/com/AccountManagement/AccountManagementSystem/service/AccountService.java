@@ -15,12 +15,12 @@ import java.util.List;
 public class AccountService {
     private final AccountRepository accountRepository;
 
-    public Account AddAccount( Account account) {
+    public Account addAccount( Account account) {
         return accountRepository.save(account);
     }
 
 
-    public List<Account> findAll() {
+    public List<Account> findAllAccounts() {
         return new ArrayList<>(accountRepository.findAll());
     }
 }

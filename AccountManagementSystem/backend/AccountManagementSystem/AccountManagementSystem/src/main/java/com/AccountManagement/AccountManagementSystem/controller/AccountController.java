@@ -9,20 +9,21 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api")
+@CrossOrigin("*")
+@RequestMapping("api")
 public class AccountController {
 
     private final AccountService accountService;
 
-    @PostMapping("/account")
+    @PostMapping("/account/postAccount")
     public Account addAccount (@RequestBody Account account){
 
-        return accountService.AddAccount(account);
+        return accountService.addAccount(account);
     }
 
-    @GetMapping("student/view")
+    @GetMapping("/account/view")
     public List<Account> viewAllAccounts(){
-        return accountService.findAll();
+        return accountService.findAllAccounts();
     }
 
 
