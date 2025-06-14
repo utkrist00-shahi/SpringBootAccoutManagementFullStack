@@ -15,42 +15,44 @@ export default function Dashboard() {
         const data = await response.json();
         setAccounts(data);
       } catch (error) {
-        console.error("error fetching accounts", error.message);
+        console.error("Error fetching accounts", error.message);
       }
     };
     fetchAccounts();
   }, []);
 
   return (
-    <Container>
+    <Container className="my-4">
       <Row>
         <Col>
-          <h1>Employees</h1>
-          <Table>
-            <thead>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>email</th>
-                <th>password</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {accounts.map((account) => (
-                <tr key={account.id}>
-                  <td>{account.firstName}</td>
-                  <td>{account.lastName}</td>
-                  <td>{account.email}</td>
-                  <td>{account.password}</td>
-                  <td>
-                    <Button>Update</Button>{" "}
-                    <Button>Delete</Button>
-                  </td>
+          <h1 className="mb-4">Employees</h1>
+          <div className="card shadow-sm">
+            <Table striped bordered hover className="mb-0">
+              <thead className="table-primary">
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Action</th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
+              </thead>
+              <tbody>
+                {accounts.map((account) => (
+                  <tr key={account.id}>
+                    <td>{account.firstName}</td>
+                    <td>{account.lastName}</td>
+                    <td>{account.email}</td>
+                    <td>{account.password}</td>
+                    <td>
+                      <Button variant="success" className="me-2 rounded">Update</Button>
+                      <Button variant="danger" className="rounded">Delete</Button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
         </Col>
       </Row>
     </Container>
