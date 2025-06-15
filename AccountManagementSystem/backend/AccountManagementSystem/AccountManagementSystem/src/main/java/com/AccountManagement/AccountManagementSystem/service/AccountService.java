@@ -23,4 +23,11 @@ public class AccountService {
     public List<Account> findAllAccounts() {
         return new ArrayList<>(accountRepository.findAll());
     }
+
+    public void deleteAccountById(Long id) {
+        if (!accountRepository.existsById(id)) {
+            System.out.println("Account with id: " + id + " does not exist");
+        }
+        accountRepository.deleteById(id);
+    }
 }
