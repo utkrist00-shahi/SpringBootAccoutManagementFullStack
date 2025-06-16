@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -41,5 +42,21 @@ public class AccountController {
 
     }
 
+    @PutMapping("/account/update/{id}")
+    public String updateAccount(@PathVariable Long id, @RequestBody Account account) {
+        if (id == null || account == null) {
+            return "Invalid input: ID or account cannot be null";
+        }
 
+        try {
+            Optional<Account> updatedAccount = accountService.updateAccountByID(id, account);
+            if (updatedAccount.isPresent()) {
+                return "Account with id: " + id + " has been updated";
+            } else {
+                return "Account with id: " + id + " not found";
+            }
+        } catch (Exception e) {
+            return "Error updating account with id: " + id + " - " + e.getMessage();
+        }
+    }
 }
